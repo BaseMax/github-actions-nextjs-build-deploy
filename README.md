@@ -84,19 +84,19 @@ jobs:
 ### How It Works
 
 - **Trigger:** The workflow is triggered on every push to the repository.
-- **Checkout: The repository code is checked out using the actions/checkout action.
-- **Deploy: The workflow connects to the remote server via SSH using the appleboy/ssh-action action. It navigates to the specified server path, pulls the latest changes, installs dependencies, builds the Next.js application, and manages the application process using PM2.
+- **Checkout:** The repository code is checked out using the actions/checkout action.
+- **Deploy:** The workflow connects to the remote server via SSH using the appleboy/ssh-action action. It navigates to the specified server path, pulls the latest changes, installs dependencies, builds the Next.js application, and manages the application process using PM2.
 
 ### Key Steps
 
-- **Git Pull: Updates the repository on the server with the latest code.
-- **Install Dependencies: Installs the required Node.js dependencies, forcing installation to ensure compatibility.
-- **Build: Builds the Next.js application.
+- **Git Pull:** Updates the repository on the server with the latest code.
+- **Install Dependencies:** Installs the required Node.js dependencies, forcing installation to ensure compatibility.
+- **Build:** Builds the Next.js application.
 - **Manage with PM2:
-If the package.json file exists:
-If PM2 is already running the application (nextjs-website), it will be restarted.
-If not, PM2 will start the application on port 3001.
-PM2 saves the current process list to be restarted on system reboot.
+    If the package.json file exists:
+        - If PM2 is already running the application (nextjs-website), it will be restarted.
+        - If not, PM2 will start the application on port 3001.
+        - PM2 saves the current process list to be restarted on system reboot.
 
 ### Conclusion
 
