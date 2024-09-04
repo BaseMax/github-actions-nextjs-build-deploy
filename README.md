@@ -93,7 +93,8 @@ jobs:
 - **Install Dependencies:** Installs the required Node.js dependencies, forcing installation to ensure compatibility.
 - **Build:** Builds the Next.js application.
 - **Manage with PM2:
-    If the package.json file exists:
+
+  If the package.json file exists:
         - If PM2 is already running the application (nextjs-website), it will be restarted.
         - If not, PM2 will start the application on port 3001.
         - PM2 saves the current process list to be restarted on system reboot.
