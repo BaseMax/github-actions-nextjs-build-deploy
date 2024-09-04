@@ -27,6 +27,8 @@ To add these secrets:
 - Click on Secrets and variables > Actions.
 - Click New repository secret and add each of the above secrets.
 
+![GitHub Actions for Next.js Build and Deployment](https://github.com/user-attachments/assets/27a5f65a-e4b2-4835-ab90-07b789026ab7)
+
 ## Workflow Setup
 
 The deploy.yml file defines the workflow for building and deploying the Next.js application. This file should be placed in the .github/workflows directory of your repository.
